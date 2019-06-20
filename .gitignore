@@ -1,0 +1,11 @@
+# Byte-compiled . optimized / DLL files
+__pycache__/
+
+# keys and credentials
+.clientInfo
+credentials.json
+openweathermap_token.py
+token.pickle
+
+# unit test / coverage reports
+quickstart.py
