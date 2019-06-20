@@ -38,7 +38,7 @@ if account_info is not None:
     temp_K = int(account_info['main']['temp'])
     temp_F = round(((temp_K - 273.15) * float(9/5) + 32), 2)
     windSpeed = account_info['wind']['speed']
-    print ('In the city of {0} the weather condition is {1} with temperatures at {2} Fahrenheight and a wind speed of {3} miles per hour'.format(name, weatherCondition, temp_F, windSpeed))
+    print ('In the city of {0} the weather condition is {1} with temperatures at {2} Fahrenheight and a wind speed of {3} mph'.format(name, weatherCondition, temp_F, windSpeed))
 else:
     print ('[!] Request failed')
 
