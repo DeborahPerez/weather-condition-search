@@ -10,3 +10,5 @@ googlemapsplatform_token.py
 
 # unit test / coverage reports
 quickstart.py
+city.list.json
+city.list.json.gz
