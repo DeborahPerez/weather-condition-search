@@ -3,7 +3,7 @@ import requests
 from openweathermap_token import APPID
 
 api_token = '&APPID=' + APPID
-api_url_base = "http://api.openweathermap.org/data/2.5/weather?q="
+api_url_base = "http://api.openweathermap.org/data/2.5/weather?id="
 
 
 headers = {'Content-Type': 'application/json',
@@ -11,7 +11,7 @@ headers = {'Content-Type': 'application/json',
 
 
 def test_city_info():
-    api_url = '{0}London{1}'.format(api_url_base, api_token)
+    api_url = '{0}5128581{1}'.format(api_url_base, api_token)
 
     response = requests.get(api_url, headers=headers)
 
