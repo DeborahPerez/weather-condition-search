@@ -20,6 +20,8 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
+##### Before running application please see application details about tokens and keys
+
 ### Run
 
 ```sh
