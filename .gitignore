@@ -4,7 +4,6 @@ __pycache__/
 # keys and credentials
 .clientInfo
 credentials.json
-openweathermap_token.py
 token.pickle
 googlemapsplatform_token.py
 
