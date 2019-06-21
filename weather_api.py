@@ -50,13 +50,9 @@ def get_cities_for_condition(condition):
                 temp_K = int(result['main']['temp'])
                 temp_F = round(((temp_K - 273.15) * float(9/5) + 32), 2)
                 windSpeed = result['wind']['speed']
-                statement = '{0} is experiencing {1} with temperatures at {2} Fahrenheit and {3} mph wind speed'.format(name, weatherCondition, temp_F, windSpeed)
+                statement = '{0} is experiencing {1} weather conditions with temperatures at {2} Fahrenheit and {3} mph wind speed'.format(name, weatherCondition, temp_F, windSpeed)
                 results.append(statement)
         else:
             print ('[!] Request failed')
 
     return results
-
-if __name__ == "__main__":
-    condition = 'Rain'
-    get_cities_for_condition(condition)
