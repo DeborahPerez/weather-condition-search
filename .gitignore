@@ -3,7 +3,6 @@ __pycache__/
 
 # keys and credentials
 .clientInfo
-credentials.json
 token.pickle
 googlemapsplatform_token.py
 
