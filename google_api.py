@@ -46,10 +46,7 @@ def main():
     if not values:
         print('No data found.')
     else:
-        print('City, State')
         return values
-        #for row in values:
-            # Print columns A and E, which correspond to indices 0 and 4.
-            #print('%s, %s' % (row[0], row[1]))
+        
 if __name__ == '__main__':
     main()

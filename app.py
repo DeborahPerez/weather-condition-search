@@ -5,7 +5,7 @@ import weather_api
 from condition_types import conditions
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
-print (os.environ['APP_SETTINGS'])
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():

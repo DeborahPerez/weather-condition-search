@@ -7,16 +7,9 @@ import geocoder
 api_token = '&APPID=' + APPID
 api_url_base = "http://api.openweathermap.org/data/2.5/weather?"
 json_city_ids = 'city.list.json'
-#condition = 'Rain'
+
 headers = {'Content-Type': 'application/json',
 	   'Authorization': 'Bearer {0}'.format(api_token)}
-
-
-# Unpack compressed json information with city ids
-def read_json_file (jsonFile):
-    with open(jsonFile, 'r', encoding="latin-1") as fin:
-        data = json.load(fin)
-        return data
 
 
 # Test capturing data
@@ -38,9 +31,6 @@ def get_lon_lat(city, state):
     return [lat, lng]
 
 # ------------------------------------------------------------------------
-
-# Save list of cities and states
-cities = google_api.main()
 
 # Loop through cities
 # get longitude and lattitude for each city
