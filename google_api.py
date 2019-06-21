@@ -13,9 +13,7 @@ SAMPLE_SPREADSHEET_ID = '1_Rxr-2jkJgWmmO6xLJJ61SHEXeRCUVIgv6cXXnvz438'
 SAMPLE_RANGE_NAME = 'Cities!A2:B'
 
 def main():
-    """Shows basic usage of the Sheets API.
-    Prints values from a sample spreadsheet.
-    """
+
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first

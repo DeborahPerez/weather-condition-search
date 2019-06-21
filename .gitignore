@@ -4,9 +4,6 @@ env/
 Copies/
 # keys and credentials
 .clientInfo
-credentials.json
-openweathermap_token.py
-token.pickle
 googlemapsplatform_token.py
 
 # unit test / coverage reports
