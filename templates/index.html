@@ -12,18 +12,45 @@
   </head>
   <body>
     <div class="container">
-      <h1>Weather Condition Location Search</h1>
+      <h1><font color="blue">Condition Search</font></h1>
+      <h3 color="blue">Submit a weather condition to view city status</h2>
       <form role="form" method='POST' action='/'>
         <div class="form-group">
-          <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter a condition..." style="max-width: 300px;" autofocus required>
+          <input type="text" name="condition" class="form-control" id="url-box" placeholder="Enter a condition..." style="max-width: 300px;" autofocus required>
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      <br>
-      {% for error in errors %}
-        <h4>{{ error }}</h4>
-      {% endfor %}
+      <h6>Acceptable conditions are: Thunderstorm, Drizzle, Rain, Snow, Atmosphere, Clear, Clouds</h6>
+      <h6><font color="red">Please be patient, queries take a few minutes to process</font></h6>
+          <br>
+          {% for error in errors %}
+            <h4>{{ error }}</h4>
+          {% endfor %}
+          <br>
+        </div>
+        <div class="col-sm-5 col-sm-offset-1">
+          {% if results %}
+            <h2><font color="blue">City Status</font></h2>
+            <br>
+            <div id="results">
+              <table class="table table-striped" style="max-width: 300px;">
+                <thead>
+                  <tr>
+                    <th>Happening Now</th>
+                  </tr>
+                </thead>
+                {% for result in results%}
+                  <tr>
+                    <td>{{ result }}</td>
+                  </tr>
+                {% endfor %}
+              </table>
+            </div>
+          {% endif %}
+        </div>
+      </div>
     </div>
+    <br><br>
     <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
