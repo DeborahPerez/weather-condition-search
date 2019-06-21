@@ -3,7 +3,6 @@ __pycache__/
 
 # keys and credentials
 .clientInfo
-token.pickle
 googlemapsplatform_token.py
 
 # unit test / coverage reports
