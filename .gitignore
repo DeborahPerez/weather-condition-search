@@ -1,6 +1,7 @@
 # Byte-compiled . optimized / DLL files
 __pycache__/
-
+env/
+Copies/
 # keys and credentials
 .clientInfo
 credentials.json
